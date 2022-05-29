@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemies
+  - PlayerProjectile
+  - EnemyFlying
+  - Chests
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG Filler
+    uniqueID: 2166117519
+    locked: 0
+  - name: Floor
+    uniqueID: 656505989
+    locked: 0
+  - name: Pixel Debris
+    uniqueID: 1475314279
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3592679371
+    locked: 0
+  - name: Sprite UI
+    uniqueID: 1787012973
+    locked: 0
