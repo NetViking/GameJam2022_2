@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2304752794329913575, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: MaxHP
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2304752794329913593, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
       propertyPath: m_Name
       value: EnemyWinged

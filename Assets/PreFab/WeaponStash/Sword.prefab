@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8115845581354120703}
   - component: {fileID: 6191558390098479280}
   - component: {fileID: 9179323784197212508}
+  - component: {fileID: 9002318979103537577}
   m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6877375017402835433}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 2058499880115354505}
@@ -96,9 +97,22 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.11, y: -0.13}
   serializedVersion: 2
-  m_Radius: 0.13
+  m_Radius: 0.23
+--- !u!114 &9002318979103537577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877375017402835433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1230174f9b4948c4397cd8c80127c2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1500
 --- !u!1 &9067631735097717120
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +124,6 @@ GameObject:
   - component: {fileID: 2058499880115354505}
   - component: {fileID: 6162444429987229367}
   - component: {fileID: 3195965147640210963}
-  - component: {fileID: 1843538139455171795}
   m_Layer: 8
   m_Name: Sword
   m_TagString: Untagged
@@ -126,7 +139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9067631735097717120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.04, z: 0}
+  m_LocalPosition: {x: 0.515, y: 1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8115845581354120703}
@@ -175,16 +188,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1843538139455171795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9067631735097717120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1230174f9b4948c4397cd8c80127c2fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1500

@@ -11,25 +11,25 @@ public class PlayerMetaData : MonoBehaviour
         EnemiesKilled = 0;
         ChestsLooted = 0;
 
-        Title = PlayerPrefs.GetString("Title", "Monarch");
+        Title = PlayerPrefs.GetString("Title", "Old King");
         WeaponName = PlayerPrefs.GetString("StartingWeapon", "Sword");
         Weapon = Weapon.GetWeaponByName(WeaponName);
 
         GetComponent<PlayerWeapons>().GainWeapon(Weapon);
 
-        GetComponent<Health>().DeathSounds = (Title == "Queen") ? DeathSounds_Queen : DeathSounds_King;
-        GetComponent<Health>().HurtSounds = (Title == "Queen") ? HurtSounds_Queen : HurtSounds_King;
+        GetComponent<Health>().DeathSounds = (Title == "Grumpy Cat") ? DeathSounds_Grumpy : DeathSounds_Grumpy;
+        GetComponent<Health>().HurtSounds = (Title == "Grumpy Cat") ? HurtSounds_Grumpy : HurtSounds_Grumpy;
 
         switch (Title)
         {
-            case "Monarch":
-                spriteRenderer.sprite = Sprite_Monarch;
+            case "Old King":
+                spriteRenderer.sprite = Sprite_OldKing;
                 break;
-            case "King":
-                spriteRenderer.sprite = Sprite_King;
+            case "Grumpy Cat":
+                spriteRenderer.sprite = Sprite_Grumpy;
                 break;
-            case "Queen":
-                spriteRenderer.sprite = Sprite_Queen;
+            case "Happy Cat":
+                spriteRenderer.sprite = Sprite_Happy;
                 break;
         }
     }
@@ -38,15 +38,15 @@ public class PlayerMetaData : MonoBehaviour
     static public string WeaponName;
     static public Weapon Weapon;
 
-    public Sprite Sprite_Monarch;
-    public Sprite Sprite_King;
-    public Sprite Sprite_Queen;
+    public Sprite Sprite_OldKing;
+    public Sprite Sprite_Grumpy;
+    public Sprite Sprite_Happy;
 
-    public AudioClip[] DeathSounds_King;
-    public AudioClip[] DeathSounds_Queen;
+    public AudioClip[] DeathSounds_Grumpy;
+    public AudioClip[] DeathSounds_Happy;
 
-    public AudioClip[] HurtSounds_King;
-    public AudioClip[] HurtSounds_Queen;
+    public AudioClip[] HurtSounds_Grumpy;
+    public AudioClip[] HurtSounds_Happy;
 
     public SpriteRenderer spriteRenderer;
 
@@ -67,7 +67,6 @@ public class PlayerMetaData : MonoBehaviour
             return;
 
         TimeOfDeath = Mathf.CeilToInt(TimeManager.Instance.ElapsedTime);
-        //Debug.Log("SAVING LEGACY POINTS");
         PlayerPrefs.SetInt("Legacy Points", PlayerPrefs.GetInt("Legacy Points", 0) + TimeOfDeath);
         PlayerPrefs.SetInt("Total Legacy Points", PlayerPrefs.GetInt("Total Legacy Points", 0) + TimeOfDeath);
     }

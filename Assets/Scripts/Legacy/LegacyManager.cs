@@ -31,28 +31,28 @@ public class LegacyManager : MonoBehaviour
         RegisterUpgrade(new LegacyUpgrade("+10% Sword Radius", 5, (l) => { SetWeaponScale("Sword", 1f + (l.UpgradeLevel / 10f)); }));
         RegisterUpgrade(new LegacyUpgrade("-10% Sword Cooldown", 2, (l) => { ChangeWeaponCooldown("Sword", 1f - (l.UpgradeLevel / 10f)); }));
 
-        RegisterUpgrade(new LegacyUpgrade("+1 Bomb Damage", 5, (l) => { ChangeWeaponDamage("Bomb", l.UpgradeLevel); }));
+      /*  RegisterUpgrade(new LegacyUpgrade("+1 Bomb Damage", 5, (l) => { ChangeWeaponDamage("Bomb", l.UpgradeLevel); }));
         RegisterUpgrade(new LegacyUpgrade("+10% Bomb Radius", 5, (l) => { SetWeaponScale("Bomb", 1f + (l.UpgradeLevel / 10f)); }));
         RegisterUpgrade(new LegacyUpgrade("-10% Bomb Cooldown", 5, (l) => { ChangeWeaponCooldown("Bomb", 1f - (l.UpgradeLevel / 10f)); }));
-        RegisterUpgrade(new LegacyUpgrade("-10% Bomb Fuse", 5, (l) => { ChangeWeaponLifespan("Bomb", 1f - (l.UpgradeLevel / 10f)); }));
+        RegisterUpgrade(new LegacyUpgrade("-10% Bomb Fuse", 5, (l) => { ChangeWeaponLifespan("Bomb", 1f - (l.UpgradeLevel / 10f)); }));*/
 
-        RegisterUpgrade(new LegacyUpgrade("+1 Magic Missile Damage", 5, (l) => { ChangeWeaponDamage("Magic Missile", l.UpgradeLevel); }));
-        RegisterUpgrade(new LegacyUpgrade("+1 Magic Missiles", 3, (l) => { ChangeWeaponProjectiles("Magic Missile", l.UpgradeLevel); }));
-        RegisterUpgrade(new LegacyUpgrade("-10% Magic Missile Cooldown", 5, (l) => { ChangeWeaponCooldown("Magic Missile", 1f - (l.UpgradeLevel / 10f)); }));
+        RegisterUpgrade(new LegacyUpgrade("+1 Arrow Damage", 5, (l) => { ChangeWeaponDamage("Arrow", l.UpgradeLevel); }));
+        RegisterUpgrade(new LegacyUpgrade("+1 Arrow Missiles", 3, (l) => { ChangeWeaponProjectiles("Arrow", l.UpgradeLevel); }));
+        RegisterUpgrade(new LegacyUpgrade("-10% Arrow Cooldown", 5, (l) => { ChangeWeaponCooldown("Arrow", 1f - (l.UpgradeLevel / 10f)); }));
 
         RegisterUpgrade(new LegacyUpgrade("+1 Shuriken Damage", 5, (l) => { ChangeWeaponDamage("Shuriken", l.UpgradeLevel); }));
         RegisterUpgrade(new LegacyUpgrade("+2 Shuriken", 4, (l) => { ChangeWeaponProjectiles("Shuriken", l.UpgradeLevel * 2); }));
         RegisterUpgrade(new LegacyUpgrade("+1 Shuriken Hits", 5, (l) => { ChangeWeaponNumHits("Shuriken", l.UpgradeLevel); }));
         RegisterUpgrade(new LegacyUpgrade("-10% Shuriken Cooldown", 5, (l) => { ChangeWeaponCooldown("Shuriken", 1f - (l.UpgradeLevel / 10f)); }));
 
-        RegisterUpgrade(new LegacyUpgrade("+1 Boomerang Damage", 3, (l) => { ChangeWeaponDamage("Boomerang", l.UpgradeLevel); }));
-        RegisterUpgrade(new LegacyUpgrade("+1 Boomerang", 2, (l) => { ChangeWeaponProjectiles("Boomerang", l.UpgradeLevel); }));
-        RegisterUpgrade(new LegacyUpgrade("-10% Boomerang Cooldown", 5, (l) => { ChangeWeaponCooldown("Boomerang", 1f - (l.UpgradeLevel / 10f)); }));
-        RegisterUpgrade(new LegacyUpgrade("+10% Boomerang Radius", 5, (l) => { SetWeaponScale("Boomerang", 1f + (l.UpgradeLevel / 10f)); }));
+        RegisterUpgrade(new LegacyUpgrade("+1 Throwing Axe Damage", 3, (l) => { ChangeWeaponDamage("Throwing Axe", l.UpgradeLevel); }));
+        RegisterUpgrade(new LegacyUpgrade("+1 Throwing Axe", 2, (l) => { ChangeWeaponProjectiles("Throwing Axe", l.UpgradeLevel); }));
+        RegisterUpgrade(new LegacyUpgrade("-10% Throwing Axe  Cooldown", 5, (l) => { ChangeWeaponCooldown("Throwing Axe", 1f - (l.UpgradeLevel / 10f)); }));
+        RegisterUpgrade(new LegacyUpgrade("+10% Throwing Axe  Radius", 5, (l) => { SetWeaponScale("Throwing Axe", 1f + (l.UpgradeLevel / 10f)); }));
 
-        RegisterUpgrade(new LegacyUpgrade("+0.5 Spirit Orb Damage", 5, (l) => { ChangeWeaponDamage("Spirit Orb", l.UpgradeLevel / 2f); }));
-        RegisterUpgrade(new LegacyUpgrade("-10% Spirit Orb Cooldown", 5, (l) => { ChangeWeaponCooldown("Spirit Orb", 1f - (l.UpgradeLevel / 10f)); }));
-        RegisterUpgrade(new LegacyUpgrade("+1 Spirit Orb Hits", 5, (l) => { ChangeWeaponNumHits("Spirit Orb", l.UpgradeLevel); }));
+        RegisterUpgrade(new LegacyUpgrade("+0.5 Thors Hammer Damage", 5, (l) => { ChangeWeaponDamage("Thors Hammer", l.UpgradeLevel / 2f); }));
+        RegisterUpgrade(new LegacyUpgrade("-10% Thors Hammer Cooldown", 5, (l) => { ChangeWeaponCooldown("Thors Hammer", 1f - (l.UpgradeLevel / 10f)); }));
+        RegisterUpgrade(new LegacyUpgrade("+1 Thors Hammer Hits", 5, (l) => { ChangeWeaponNumHits("Thors Hammer", l.UpgradeLevel); }));
     }
 
     void SetupUI()
@@ -80,7 +80,7 @@ public class LegacyManager : MonoBehaviour
     {
         buttonGO.transform.Find("Button Text").GetComponent<TMP_Text>().text = upgrade.Name;
         buttonGO.transform.Find("Limit Box/Limit Text").GetComponent<TMP_Text>().text = upgrade.UpgradeLevel.ToString() + "/" + upgrade.MaxLevel.ToString();
-        buttonGO.transform.Find("Cost Box/Cost Text").GetComponent<TMP_Text>().text = "£" + CostToLevel(upgrade);
+        buttonGO.transform.Find("Cost Box/Cost Text").GetComponent<TMP_Text>().text = "$" + CostToLevel(upgrade);
 
         //Debug.Log("- checking points: " + PlayerPrefs.GetInt("Legacy Points"));
         buttonGO.GetComponent<Button>().interactable = PlayerPrefs.GetInt("Legacy Points") >= CostToLevel(upgrade);

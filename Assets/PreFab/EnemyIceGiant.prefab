@@ -59,17 +59,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2304752794329913574, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: BlinkDistanceOnCollision
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304752794329913575, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: MaxHP
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2304752794329913593, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
       propertyPath: m_Name
       value: EnemyIceGiant
       objectReference: {fileID: 0}
     - target: {fileID: 2304752795338239148, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2304752795338239148, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304752795338239149, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7575675358805760898, guid: e90bc21e03b45e14280b350945490a36, type: 3}
+    - target: {fileID: 6844634472295058029, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: m_Radius
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844634472295058029, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844634472295058029, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8cecafcd9b6fb4eb9fc80543b74642, type: 3}
@@ -103,7 +127,7 @@ Animator:
   m_GameObject: {fileID: 6581846791944005215}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 99da64195d005e44fa3271cba577b872, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
