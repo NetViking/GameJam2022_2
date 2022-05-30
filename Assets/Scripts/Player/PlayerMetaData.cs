@@ -17,18 +17,18 @@ public class PlayerMetaData : MonoBehaviour
 
         GetComponent<PlayerWeapons>().GainWeapon(Weapon);
 
-        GetComponent<Health>().DeathSounds = (Title == "Grumpy Cat") ? DeathSounds_Grumpy : DeathSounds_Grumpy;
-        GetComponent<Health>().HurtSounds = (Title == "Grumpy Cat") ? HurtSounds_Grumpy : HurtSounds_Grumpy;
+        GetComponent<Health>().DeathSounds = (Title == "Grumpy") ? DeathSounds_Grumpy : DeathSounds_Grumpy;
+        GetComponent<Health>().HurtSounds = (Title == "Grumpy") ? HurtSounds_Grumpy : HurtSounds_Grumpy;
 
         switch (Title)
         {
             case "Old King":
                 spriteRenderer.sprite = Sprite_OldKing;
                 break;
-            case "Grumpy Cat":
+            case "Grumpy":
                 spriteRenderer.sprite = Sprite_Grumpy;
                 break;
-            case "Happy Cat":
+            case "Happy":
                 spriteRenderer.sprite = Sprite_Happy;
                 break;
         }

@@ -47,14 +47,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: {x: 0, y: 0}
-  Damage: 0
-  NumHits: 0
+  Damage: 50
+  NumHits: 4
   FacesVelocity: 0
   LifeSpan: 10
-  ReturnToPlayerTime: 0
-  ReturnToPlayerDamping: 0
+  ReturnToPlayerTime: 5
+  ReturnToPlayerDamping: 4
   ReturnToPlayerSelfDestruct: 0
-  ReturnToPlayerAngle: 0
+  ReturnToPlayerAngle: 45
 --- !u!50 &1600785633159254118
 Rigidbody2D:
   serializedVersion: 4
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1230174f9b4948c4397cd8c80127c2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1500
+  speed: 500
 --- !u!1 &7285737264526595996
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 5389750876558001034}
   - component: {fileID: 8034895479088545477}
   - component: {fileID: 4976188467198345001}
+  - component: {fileID: 3974479258536499402}
   m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
@@ -115,8 +116,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7285737264526595996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: 1.13, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 2809183967136943612}
   m_RootOrder: 0
@@ -188,3 +189,16 @@ CircleCollider2D:
   m_Offset: {x: -0.0009328723, y: 0}
   serializedVersion: 2
   m_Radius: 0.07029567
+--- !u!114 &3974479258536499402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7285737264526595996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1230174f9b4948c4397cd8c80127c2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 240

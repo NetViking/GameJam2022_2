@@ -66,8 +66,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHP: 1
-  DeathSounds: []
-  HurtSounds: []
+  DeathSounds:
+  - {fileID: 8300000, guid: 54c294c081cb2c648b9a11a88b980dcc, type: 3}
+  - {fileID: 8300000, guid: 16f54cee37947fd42b496ce6132a50c0, type: 3}
+  HurtSounds:
+  - {fileID: 8300000, guid: cf970e459334a274fae19ae9330a6d04, type: 3}
 --- !u!114 &2304752794329913574
 MonoBehaviour:
   m_ObjectHideFlags: 0

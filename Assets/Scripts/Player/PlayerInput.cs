@@ -24,19 +24,15 @@ public class PlayerInput : MonoBehaviour
                 Input.GetAxisRaw("Vertical")
             );
 
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.F4))
         {
             GetComponent<Health>().Die();
         }
-        if (Input.GetKeyDown(KeyCode.F8))
+        if (Input.GetKeyDown(KeyCode.F2))
         {
             PlayerPrefs.DeleteAll();
         }
-        if (Input.GetKeyDown(KeyCode.F7))
-        {
-            PlayerPrefs.SetInt("Legacy Points", 999999999);
 
-        }
     }
 
     

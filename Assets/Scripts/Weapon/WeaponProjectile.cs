@@ -71,7 +71,7 @@ public class WeaponProjectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerMetaData>())
+        if (collision.GetComponentInParent<PlayerMetaData>())
             return;
 
         NumHits--;

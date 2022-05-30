@@ -149,7 +149,7 @@ MonoBehaviour:
   Damage: 0
   NumHits: 0
   FacesVelocity: 0
-  LifeSpan: 10
+  LifeSpan: 20
   ReturnToPlayerTime: 0
   ReturnToPlayerDamping: 0
   ReturnToPlayerSelfDestruct: 0

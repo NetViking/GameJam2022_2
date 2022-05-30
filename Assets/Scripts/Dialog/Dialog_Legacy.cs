@@ -45,8 +45,8 @@ public class Dialog_Legacy : MonoBehaviour
 
         // If we aren't fixed on the two character versions, remember to change CharacterImages
 
-        characterTitles[0] = "King";
-        characterTitles[1] = "Queen";
+        characterTitles[0] = "Grumpy";
+        characterTitles[1] = "Happy";
 
         // Pick two random weapons.
         Weapon[] ws = GameObject.FindObjectsOfType<Weapon>();
